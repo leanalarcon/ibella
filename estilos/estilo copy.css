@@ -1,0 +1,641 @@
+
+         /*FLEXBOX*/
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   }
+
+   body{
+    font-family: 'Montserrat', sans-serif;
+   }
+
+   a{
+    text-decoration: none;
+   }
+
+     .padre{  
+       display: flex;
+       flex-flow: column nowrap;
+    }
+
+    .margen-interno{
+      padding: 0 50px;
+    }
+          .header{
+             background: url(../imagenes/ambiente.jpg);
+             background-position: center;
+             background-attachment: contain;
+             background-size: cover;
+             display: flex;
+             flex-flow: column nowrap;
+        }
+
+              .menu{
+               background-color:#c7862c;
+               display: flex;
+               flex-flow: row nowrap;
+               height: 60px;
+               align-items: center;
+               border-bottom: 1px solid rgba(255,255,255,.5) 
+             }
+
+                  .logo{                     
+                     flex: 1 1 auto;                    
+                  }
+
+                      .logo a{
+                        color: #fff;
+                        font-size: 30px; 
+                      }
+
+                      .logo a:hover{
+                        color: #343434;
+                      }
+
+                  .nav{
+                     flex: 5 1 auto;
+                  }
+
+                      .nav a{
+                        color: #fff;
+                        font-size: 11px;
+                        text-transform: uppercase;
+                        padding: 0 10px;
+                        letter-spacing: 2px;
+                      }
+
+                      .nav a:hover{
+                        color: #343434;
+                      }
+
+
+                  .social{
+                     flex: 1 1 auto;   
+                     display: flex;                  
+                  } 
+
+                      .social a{
+                        font-size: 18px;
+                        color: #fff;
+                        padding: 0 5px;
+                      }
+
+                      .social a:hover{
+                        color: #343434;
+                      }
+
+              .texto-principal{
+               /* background: #679b9b;*/
+               height: 580px;
+               display: flex;
+               align-items: center;
+              }
+                   h1{
+                    font-family:"lora" , serif;
+                    font-size: 21px;
+                    color: #fff;
+                    font-weight: 300;
+                    text-align: center;
+                    line-height: 1.6;
+                  }  
+
+
+
+          .section{
+              height: 800px;
+              background: #f7f7f7;
+              display: flex;
+        }
+               .articulos{
+                     background:#f7f7f7; 
+                     flex: 2 1 auto;
+                     display: flex;
+                     flex-flow: row wrap;
+               }  
+                  .article {             
+                       flex: 1 1 40%;
+                       color: #444;
+                       font-size: 13px;
+                       letter-spacing: 1px;
+                       margin:10px 10px 0 0px;
+                       flex: 1 1 45%;
+                       background: #ececec;
+                  }
+
+                  .article  img{
+                    width: 100%;
+                  }
+
+                  .article a {
+                    color:#fff;
+                    font-size: 13px;
+                    padding: 10px;
+                    background: #000;
+                    margin: 10px 0;
+                    display: inline-block;
+                  }
+
+                  .article  a:hover{
+                    background: #546cc3;
+                  }
+
+                  h3{
+                    color: #fff;
+                    font-size: 13px;
+                    padding: 10px 0;
+                    margin-top: -80px;
+                  }
+
+                  h2{
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    padding: 0px 0 10px 0;
+                    color: #fff;
+                  }
+                .aside{ 
+                    /*background:#f0a500;*/
+                    flex: 1 1 auto;
+                    margin: 10px 5px 10px 0;
+                } 
+
+                .piepag{
+                  background: #000;
+                  color: #fff;
+                  padding: 10px;
+                  text-transform: uppercase;
+                }
+                   
+ 
+
+
+
+    @media all and (max-width: 1120px){
+          .section , .sectionfacial{
+              flex-direction: column;
+          }
+
+          .menu{
+            flex-direction: column;
+            height: auto;
+          }
+
+          .aside{
+            display: flex;
+            justify-content: center;
+          }
+
+          h1{
+            font-size: 15px;
+          }
+
+          .texto-principal{
+            height: 450px;
+          }
+
+    }
+
+    @media all and (max-width: 762px){
+          .articulos{
+            flex-direction: column;
+          }
+    }
+
+    @media all and (max-width: 650px){
+          .off{ display: none; }
+    }
+
+    @media all and (max-width: 400px){
+           .aside{
+            flex-direction: column;
+           }
+    }
+
+
+
+
+                                                      /*FACIAL*/
+
+
+
+                               /*INTRODUCCION*/
+
+.fotofacial{
+background: url(../imagenes/limpieza.jpg);
+height: 650px;
+
+} 
+
+.cajafacial{
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 800px;
+  margin-top: 50px;
+}
+
+.titulofacial , .ventajafacialtitulo , .titulotratamiento ,.titulocorporal{
+  text-align: center;
+  margin: 60px 0 50px 0; 
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-size: 20px;
+  color: #520b34;
+}
+
+  .contenidofacial, .contenidocorporal{
+    text-align: center;
+    line-height: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 50px;
+    font-size: 15px;
+  }
+
+                          /*VENTAJAS*/
+  
+  .ventajasfacial{
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .ventaja{
+    border: solid none;
+    width: 350px;
+    height: 120px;
+    padding: 5px;
+  }
+
+  .icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+  } 
+
+      .icono1{
+        position: relative;
+        right: 100px;
+      }
+
+      .icono3{
+        position: relative;
+        left: 70px;
+      }
+
+
+
+  .tratamientosfaciales , .tratamientoscorporales{
+  display: flex;
+  flex-flow: column nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  background-color: #e3daca;
+  }
+
+.tipostratamientosfaciales , .tipostratamientoscorporales{
+  margin: 20px;
+}
+
+
+.contenidosfaciales , .contenidocorporales{
+
+  border: solid 1px #c2b6cf;
+  border-bottom-color: #dbc48f;
+  border-bottom-width: 4px;
+  width: 350px;
+  height: 120px;
+-moz-transition: width 2s, height 2s, -moz-transform 2s;
+
+}
+
+.contenidocorporales:hover , .contenidosfaciales:hover{
+  -webkit-transform : scale(1.1);
+}
+
+  .boton1{
+  margin: 10px;
+  width: 150px;
+  border:2px;
+  color: white;
+  background-color: #ba7747;
+}
+
+
+
+.titulocontenidofacial , .titulocontenidocorporal{
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 5px 0 10px 0;
+  font-size: 16px;
+  color: #343634;
+}
+
+.descripcioncontenidofacial , .descripcioncontenidocorporal{
+  text-align: left;
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 7px;
+  color: gray;
+
+
+}
+
+ 
+                                /*SECTION*/
+section{
+  height: 700px;
+  background-color: #47434a;
+}
+
+.ultimashistorias{
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: #c7b3c6;
+}
+
+.dark{
+  border-bottom:solid 2px white;
+  width:100%;
+  text-align: center;
+  padding-right: 50px;
+  padding-top: 10px; 
+
+}
+
+.padrefacial{
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.violeta{
+  width: 180px;
+  color: #fff;
+  text-align: center;
+ 
+
+}
+
+.amarillo{
+  width: 180px;
+  color: #fff;
+  text-align: center;
+  
+}
+
+.naranja{
+  width: 180px;
+  color: #fff;
+  text-align: center;
+  
+}
+
+.tema{
+  color: #e3dee3;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+article a {
+  color:#fff;
+  font-size: 13px;
+  padding: 10px;
+  background: #000;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+                          /*FOOTER*/
+
+footer{
+  height: 500px;
+}
+
+
+.follow{ 
+  padding-top:70px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+
+.separacion{
+
+  border-bottom:solid 1px black;
+  width:100%;
+  text-align: center;
+  padding-right: 50px;
+  padding-top: 10px; 
+
+}
+
+.navfooter{
+ text-decoration: none;
+ text-align: center;
+ margin:40px;
+ }
+
+ .contenido{
+  color: black;
+  padding: 30px;
+  font-size: 20px;
+
+ }
+
+  .navfooter a:hover{
+    color: #343434;
+   }
+
+     .socialfooter{
+        flex: 1 1 auto;   
+        display: flex;  
+        margin-left: 490px;
+        margin-right: 350px;
+     }
+
+     .socialfooter a{
+       font-size: 40px;
+       color:black;
+       padding: 0 25px;
+      
+    }
+    .socialfooter a:hover{
+       color: #343434;
+    }
+
+    .descripcion{
+      text-align: center;
+      padding-top: 70px;
+      padding-bottom: 30px;
+      color: #807e7c;
+    }
+
+    .footerfacial{
+      text-align: center;
+    }
+
+
+          /*CONTACTO*/
+
+.contacto{
+    background: url(../imagenes/contacto2.jpg);
+    display: flex;
+    flex-flow: column nowrap;
+    height: 800px;
+}
+
+.contenedor{
+  
+  margin-top: 100px;
+}
+
+.formulario{
+  width: 400px;
+  margin-left: 50px;
+  border-radius: 10px;
+  float: left;
+}
+
+
+
+label{
+  font-size: 12px;
+}
+
+.boton{
+  color: black;
+  padding: 5px;
+  background-color: none;
+  width: 150px;
+  height: 40px;
+}
+
+
+
+.titulop{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.informacion{
+  height: 300px;
+  background-color: #ded4ba;
+}
+
+.dark1{
+  border-bottom: solid 1px black;
+  padding-top: 100px;
+}
+
+.tituloinfo{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.informacioncontacto{
+  text-align: center;
+  font-size: 15px;
+}
+
+                   /*CORPORAL*/
+
+.fotocorporal{ 
+  background: url(../imagenes/fotocorporal.jpg); 
+  height: 600px;
+}
+
+.tiposdetratamiento , .solucionescorporales{
+  text-align: center;
+  margin: 70px 0 50px 0; 
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 20px;
+  color:#ba872f;
+}
+
+.solucionescorporales{
+  color:#5b4b69;
+}
+
+
+.contenidotipos , .listadesordenada{
+  text-align: left;
+  line-height: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.listadesordenada{
+  color: #676569;
+}
+
+                                            /* DEPILACION */
+       
+
+.depilacion{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  background-color: #e0dff5;
+  height: 650px;
+}
+
+.fotodepilacion{
+  width: 450px;
+  height: 500px;
+  background: url(../imagenes/depilacion.jpg); 
+  position: relative;
+  right: 90px;
+  top: 30px;
+}
+
+ .historiadepilacion{
+  width: 400px;
+  height: 517px;
+  text-align: center;
+  position: relative;
+  left: 1px;
+  top: 50px;
+}
+
+
+h4{
+  text-align: center;
+  letter-spacing: 2px;
+    color: #5c5a5a;
+  }
+
+p{
+  text-align: left;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #7c807c;    
+  }

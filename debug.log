@@ -1,0 +1,14 @@
+[1028/162126.012:ERROR:file_io.cc(90)] ReadExactly: expected 36, observed 0
+[1028/163117.656:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1102/210127.338:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\kowal\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\1f25c25b-a76d-4178-bc9b-5471cd003a29: El sistema no puede encontrar la ruta especificada. (0x3)
+[1104/180411.501:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1110/155435.885:ERROR:process_info.cc(359)] UncheckedAllocate
+[1110/155435.989:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\kowal\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\96d6b2cd-58ba-4dd4-b530-29c40df3eba6: El sistema no puede encontrar la ruta especificada. (0x3)
+[1110/155436.346:ERROR:process_info.cc(359)] UncheckedAllocate
+[1110/160706.609:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1113/114116.804:ERROR:process_info.cc(329)] VirtualQueryEx: Acceso denegado. (0x5)
+[1113/114116.804:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1113/114116.804:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose. (0xc000010a)
+[1113/114116.867:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
+[1113/114116.867:ERROR:exception_snapshot_win.cc(99)] thread ID 6732 not found in process
+[1113/114116.867:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose. (0xc000010a)
